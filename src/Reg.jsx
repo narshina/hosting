@@ -18,7 +18,7 @@ const Reg = () => {
 
   const handleSubmit = async(e) => {
     e.preventDefault();
-const response=await axios.post('http://localhost:5000/user/add',formData)
+const response=await axios.post('https://hosting-l01c.onrender.com/user/add',formData)
 setFormData(response.data)
 
     console.log('Form Data Submitted:', formData);
