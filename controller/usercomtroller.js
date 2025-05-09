@@ -7,5 +7,9 @@ const add = async (req, res) => {
     console.log(response);
 
 }
+const view =async(req,res)=>{
+    let response=await user.find()
+    res.json(response)
+}
 
-export{add}
+export{add,view}
