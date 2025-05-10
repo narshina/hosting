@@ -20,7 +20,7 @@ const Reg = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      await axios.post('http://localhost:5000/user/add', formData);
+      await axios.post('https://hosting-1-8nb4.onrender.com/user/add', formData);
       console.log('Form Data Submitted:', formData);
       setFormData({
         name: '',
